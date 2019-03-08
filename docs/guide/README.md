@@ -208,7 +208,7 @@ The reactivity system at it's current state is not **robust**. You will run into
 
 The `options` object is not reactive right now. So if you dynamically change the chart options, they will not be recognized by the mixin.
 
-If you are using the mixin you need to pass in your options as a prop names `options`. This is important because the mixin will call chart.js `update()` method or destroy and render a new chart. If the mixin renders a new chart it calls `this.renderChart(this.chartData, this.options)`.
+If you are using the mixin you need to pass in your options as a prop named `options`. This is important because the mixin will call chart.js `update()` method or destroy and render a new chart. If the mixin renders a new chart it calls `this.renderChart(this.chartData, this.options)`.
 
 But if you pass in your options directly in your `mounted()` hook, they get lost.
 
